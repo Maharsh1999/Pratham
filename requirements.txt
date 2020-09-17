@@ -1,0 +1,6 @@
+react-parallax-tilt
+@fortawesome/react-fontawesome
+@fortawesome/free-solid-svg-icons
+@fortawesome/free-brands-svg-icons
+@material-ui
+
