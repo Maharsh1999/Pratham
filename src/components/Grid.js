@@ -1,11 +1,11 @@
 import React from 'react';
 import Tilt from 'react-parallax-tilt';
-import logo from './logo/logoDark.png';
+import logo from '../logo/logoDark.png';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
-import './styles/clock.css';
-import './styles/grid.css';
-import './styles/responsive.css';
+import '../styles/clock.css';
+import '../styles/grid.css';
+import '../styles/responsive.css';
 import {SocialMediaIconsReact} from 'social-media-icons-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faArrowRight, faLevelUpAlt } from '@fortawesome/free-solid-svg-icons';
