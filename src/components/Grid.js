@@ -6,7 +6,6 @@ import Divider from '@material-ui/core/Divider';
 import '../styles/clock.css';
 import '../styles/grid.css';
 import '../styles/responsive.css';
-import {SocialMediaIconsReact} from 'social-media-icons-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faArrowRight, faLevelUpAlt } from '@fortawesome/free-solid-svg-icons';
 import {faInstagram, faFacebook, faTwitter, faLinkedin} from '@fortawesome/free-brands-svg-icons';
