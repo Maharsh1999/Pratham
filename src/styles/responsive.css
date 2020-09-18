@@ -1,20 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel+Decorative&family=Josefin+Sans:wght@300&family=Lato:wght@300&family=Montserrat:wght@500&family=Roboto:wght@300&family=Tangerine&display=swap');
-@media only screen and (max-width: 500px), only screen and (max-device-width: 500px) {
+
+@media only screen and (min-width: 1600px) {
+    .mainheading {
+        font-size: 7vw;
+    }
+}
+
+
+@media only screen and (max-width: 1520px)and (min-width: 1419px) {
+    .clock {
+        top: 9vw;
+        left: 74vw;
+    }
+    .mainheading {
+        font-size: 7vw;
+    }
+}
+
+@media only screen and (max-width: 1418px)and (min-width: 1200px) {
+    .clock {
+        top: 8vw;
+        left: 75vw;
+    }
+}
+
+@media only screen and (max-width: 1199px)and (min-width: 868px) {
+    .clock {
+        top: 7vw;
+        left: 76vw;
+    }
+    .mainheading {
+        font-size: 6vw;
+    }
+}
+
+@media only screen and (max-width: 867px)and (min-width: 768px) {
+    .clock {
+        top: 7vw;
+        left: 80vw;
+    }
+    .mainheading {
+        font-size: 6vw;
+    }
+}
+
+@media only screen and (max-width: 499px) and (min-width: 100px) {
 /* import this stylesheet in grid.css*/
 /*For Mobile*/
     * {
         font-weight: 300;
     }
 
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
     .container {
+        display: flex;
+        flex-direction: column;
         margin: 1px auto;
+        width: 90%;
         padding: 0;
     }
 
     .clock {
         position: fixed;
         top: 20px;
-        left: 45%;
+        left: 42%;
         opacity: 0.2;
     }
 
@@ -43,18 +96,20 @@
     }
 
     .subheading {
+        text-align: center;
         width: 90%;
-        margin: 0;
-        padding:0 0 4px 0;
+        margin: 0 auto;
+        padding:4px 0 4px 0;
         line-height: 130%;
         font-size: 1rem;
     }
     
     .mainheading {
-        padding: 8px 2px;
+        width:  100%;
+        text-align: center;
         margin: 0;
-        line-height: 200%;
-        font-size: 1.5rem;
+        line-height: 150%;
+        font-size: 2.5rem;
     }
     
     .email {
@@ -72,135 +127,117 @@
         width: 50%;
     }
     
-    .paragraph {
-        text-align:center;       
-        padding: 1px 2px;
-        width: 100%;
+    .paragraph {     
+        margin: 0 auto;
+        width: 90%;
+        text-align: center;
     }
 
     .paragraph p {
-        text-align: left;
         font-size: 0.6rem;
         line-height: 90%;
+        text-align: center;
+    }
+
+    .email {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    input {
+        width: 60%;
+    }
+    button {
+        width: 40%;
     }
 
     .content {
+        width: 90%;
         display: flex;
         flex-direction: column;
-        margin: 10px 0;
-        padding: 20px;
+        margin: 60px auto;
+        justify-items: center;
+        padding: 6px;
+        height: auto;
     }
 
     .left {
-        position: absolute;
         border-top: 1px solid white;
-        width: 50%;
-        top: 230px;
-        margin: 10px;
+        width: 100%;
+        margin: 0 auto;
         order:2;
-        padding: 10px 0;
+        padding: 0;
     }
     
 }
 /*For Tablet*/
 @media only screen and (max-width: 768px)and (min-width: 500px) {
-    * {
-        font-weight: 300;
-    }
-
     .container {
-        width: 100%;
-    }
-    
-    body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        align-content: center;
-    }
-    .clock{
-        position: absolute;
-        top: 15vw;
-        left: 43vw;
-    }
-    
-    .left {
         display: flex;
         flex-direction: column;
-        margin: 1vw 2vw;;
-        order:2;
-        width: 100%;
-        padding: 2%;
-        border-top: 2px solid white;
-    }
-    .logo{
-        margin: 0;
-        width: 100%;
+        width: 90%;
+        margin: 10px auto;
     }
 
-    .stalk {
-        text-align: center;
+    .left {
+        border-top: 1px solid white;
         width: 100%;
-        margin: 8% auto 4% auto;
-    }
-    .social{
-        width: 80%;
         padding: 0;
-        margin: 0 auto 2% auto;
+        margin: 16vw auto 0 auto;
+        order: 2;
     }
 
-    .subheading {
-        padding: 95px 90px;
-        margin: 2px;
-        line-height: 2px;
-    }
-
-    
-    .mainheading {
-        text-align: left;
-        margin: 2px 93px;
-        line-height: 2px;
-    }
-    
-    
-    button {
-        width: 10%;
-        font-size: 0.7rem;
-    }
-    
-    .paragraph {
-        text-align:left;       
-        padding: 30px 93px;
-        width: 200%;
-    }
-
-    .email{
-        margin-left: 0;
-    }
-
-    input {
-        width: 12%;
-    }
-
-    .paragraph p {
-        width: 30%;
-        font-size: 1.6rem;
-        line-height: 110%;
+    .logo {
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
 
     .content {
+        order: 1;
+        width: 90%;
         margin: 0 auto;
+        height: auto;
+    }
+    
+    .clock {
+        top: 25px;
+        left: 48%;
+    }
+
+    .subheading {
+        margin: 0;
+        padding: 0;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .mainheading {
+        font-size: 280%;
+    }
+
+    .paragraph {
+        padding: 10px 0;
+        margin: 1px auto;
         width: 100%;
-        color: white;
+        text-align: center;
+    }
+
+    .paragraph p {
+        width: 70%;
+        padding:0 0 20px 0;
+        margin: 0 auto;
+        font-size: 150%;
+    }
+
+    input, .email {
+        margin: 0;
     }
 }
-
-@media only screen and (max-width: 660px)and (min-width: 501px) {
-    .clock {
-        top: 110px;
-        left: 50vw;
-    }
-    .mainheading {
-        font-size: 7.5vw;
+/* Divider */
+@media only screen and (max-width: 768px) and (min-width: 200px) {
+    #divider {
+        display: none;
     }
 }
