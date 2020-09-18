@@ -1,6 +1,6 @@
 import React from 'react';
 import Tilt from 'react-parallax-tilt';
-import logo from '../logo/logoDark.png';
+import logo from '../logo.png';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 import '../styles/clock.css';
@@ -14,7 +14,6 @@ import {faInstagram, faFacebook, faTwitter, faLinkedin} from '@fortawesome/free-
   export default function VerticalDividers() {
 
     return (
-      
     <div class="container">
       <div class="header">
         <div class="overlay"></div>
@@ -26,14 +25,15 @@ import {faInstagram, faFacebook, faTwitter, faLinkedin} from '@fortawesome/free-
         <img class="logo" src={logo} style={{transform: "translateZ(20px)"}} />
         </Tilt>
         <div class="social">
-          <a class="icon" href="http://facebook.com"><FontAwesomeIcon icon={faFacebook} size="2x" /></a>
+          <a class="icon" href="https://twitter.com"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
+          <a class="icon" href="https://facebook.com"><FontAwesomeIcon icon={faFacebook} size="2x" /></a>
           <a class="icon" href="https://instagram.com"><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
           <a class="icon" href="https://linkedin.com"><FontAwesomeIcon icon={faLinkedin} size="2x" /> </a>
         </div>
         <p class="stalk">Stalk Us Here
         <FontAwesomeIcon icon={faLevelUpAlt} /></p>
         </div>
-        <Divider orientation="vertical" flexItem  style={{ margin: "0", padding: "0", border: "2px solid #E17A2A", background: "#E17A2A"}} />
+        <Divider orientation="vertical" id="divider" flexItem  style={{ margin: "0", padding: "0", border: "2px solid #E17A2A", background: "#E17A2A"}} />
         <div class="content">
           <h2 class="subheading">Brace Yourselves</h2>
           <h1 class="mainheading">INCOMING!!!</h1>
