@@ -26,7 +26,7 @@ import {faInstagram, faFacebook, faTwitter, faLinkedin} from '@fortawesome/free-
         <img class="logo" src={logo} style={{transform: "translateZ(20px)"}} />
         </Tilt>
         <div class="social">
-          <a class="icon" href="https://faceboohttps://www.facebook.com/pratham.notebookk.com"><FontAwesomeIcon icon={faFacebook} size="2x" /></a>
+          <a class="icon" href="http://facebook.com"><FontAwesomeIcon icon={faFacebook} size="2x" /></a>
           <a class="icon" href="https://instagram.com"><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
           <a class="icon" href="https://linkedin.com"><FontAwesomeIcon icon={faLinkedin} size="2x" /> </a>
         </div>
